@@ -19,7 +19,7 @@ const AppContainer = styled.div`
 `;
 
 function App() {
-  const [estado, setEstado] = useState(2)
+  const [estado, setEstado] = useState(0)
   const [globalConfig, setGlobalConfig] = useState({
     qnt_questoes: 5,
     tempo_questoes: 15
