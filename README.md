@@ -1,91 +1,85 @@
-# 🦟 Agente Anti-Dengue – Jogo Educativo
+# 💜 Quiz da Mulher - Jogo Educativo
 
-**Agente Anti-Dengue** é um jogo interativo e educativo desenvolvido em **React (Vite)** com o objetivo de conscientizar crianças sobre a **prevenção da dengue**, de forma divertida e envolvente.  
-O jogo foi criado especialmente para a **FLIS – Feira Literária Itinerante de Saquarema**, a pedido da **Subsecretaria de Saúde de Saquarema**.
+Quiz da Mulher é um jogo interativo e educativo desenvolvido em React (Vite) com o propósito de conscientizar e informar a população, especialmente as mulheres, sobre direitos, proteção, igualdade e enfrentamento à violência de gênero, de forma leve, divertida e envolvente.
 
----
+O jogo foi criado especialmente para a FLIS – Feira Literária Itinerante de Saquarema, a pedido da Secretaria Municipal da Mulher, como parte das ações de educação, orientação e empoderamento feminino promovidas pelo município.
 
 ## 🎮 Sobre o Jogo
 
-O jogador assume o papel de um **agente anti-dengue**, respondendo perguntas relacionadas à prevenção e combate ao mosquito *Aedes aegypti*.  
-Cada resposta correta soma pontos, e o jogador pode competir por uma posição no **ranking dos melhores agentes**!
+O jogador responde a perguntas relacionadas a temas importantes como:
 
-# [JOGAR](https://agente-anti-dengue.netlify.app/)
----
+- Tipos de violência contra a mulher;
+- Direitos das mulheres e serviços de apoio;
+- Igualdade de gênero e empoderamento feminino;
+- Programas municipais de proteção e conscientização.
 
-## ✨ Funcionalidades
+Cada resposta correta soma pontos, e o jogador pode competir por uma posição no ranking dos melhores participantes!
 
-- 🧩 **20 perguntas cadastradas** sobre dengue e saúde pública.
-- ⚙️ **Configurações do jogador**, como nome e preferências.  
-- 🔀 **Ordem aleatória de perguntas** a cada partida.  
-- ⏱️ **Timer de resposta**, com limite de tempo para responder cada pergunta.  
-- 🏆 **Sistema de pontuação e ranking** dos melhores jogadores.  
-- 💾 **Armazenamento local** das informações de jogo e ranking (via `localStorage`).  
+## 👉 [JOGAR AGORA](https://quiz-da-mulher.netlify.app/)
 
----
+### ✨ Funcionalidades
+
+- 💬 10 perguntas educativas sobre direitos, proteção e valorização da mulher;
+- 👩 Configuração do jogador (nome e preferências);
+- 🔀 Ordem aleatória de perguntas a cada partida;
+- ⏱️ Tempo limite para responder cada questão;
+- 🏆 Sistema de pontuação e ranking com os melhores jogadores;
+- 💾 Armazenamento local das informações e pontuações (via localStorage).
 
 ## 🧠 Objetivo Educacional
 
-O jogo tem como propósito **reforçar o aprendizado** sobre:
-- Identificação e eliminação de focos do mosquito;
-- Medidas de prevenção e cuidados com a saúde;
-- Responsabilidade coletiva na luta contra a dengue.
-
----
+O Quiz da Mulher tem como principal objetivo educar e conscientizar sobre:
+- As diferentes formas de violência contra a mulher (física, psicológica, moral, patrimonial e sexual);
+- Como e onde buscar ajuda, em especial nos serviços disponíveis no município, como o CRAM, Patrulha Maria da Penha e a Secretaria da Mulher;
+- A importância do respeito, empatia e igualdade de gênero;
+- O fortalecimento do empoderamento feminino e da autonomia das mulheres.
 
 ## 🛠️ Tecnologias Utilizadas
 
-- **JavaScript (ES6+)**
-- **React + Vite** – Front-end moderno e performático  
-- **Styled-Components / Tailwind** – Estilização dinâmica e responsiva  
-- **Netlify** – Hospedagem
-- **LocalStorage** – Persistência de dados no navegador
-
----
+- JavaScript (ES6+)
+- React + Vite – Framework moderno e performático
+- Styled Components – Estilização responsiva e dinâmica
+- Netlify – Hospedagem e deploy
+- LocalStorage – Persistência dos dados e ranking local
 
 ## 🚀 Como Executar o Projeto
 
-### 1. Clone o repositório
-
-```bash
-git clone https://github.com/sistemainternosmecict/jogo-agente-anti-dengue
-```
-
-### 2. Rodar localmente
-
 ```bash
 
-# Instale todas as dependências do projeto
+1. Clone o repositório
+
+git clone https://github.com/sistemainternosmecict/quiz_da_mulher
+
+2. Instale as dependências
+
 npm install
 
-# DESENVOLVIMENTO - Rode o app
+3. Rode em modo desenvolvimento
+
 npm run dev
-```
 
-### 3. Produção
+4. Gerar versão de produção
 
-```bash
-# PRODUÇÃO - Construir o projeto
 npm run build
-
 ```
 
-## 🏅 Créditos
+🏅 Créditos
 
-Desenvolvimento: Thyéz (SMECICT – Tecnologia da Informação de Saquarema)
+Desenvolvimento: Thyéz
+(SMECICT – Tecnologia da Informação de Saquarema)
 
-Solicitação: Subsecretaria de Saúde de Saquarema
+Solicitação: Secretaria Municipal da Mulher de Saquarema
 
 Evento: FLIS – Feira Literária Itinerante de Saquarema
 
-Tema: Educação em Saúde e Prevenção da Dengue
+Tema: Educação, Direitos e Proteção das Mulheres
 
-## 📜 Licença
+📜 Licença
 
-Este projeto é de uso educacional e institucional, voltado para atividades da Prefeitura de Saquarema.
+Este projeto é de uso educacional e institucional, destinado a ações da Prefeitura Municipal de Saquarema.
 A redistribuição ou uso comercial sem autorização prévia não é permitida.
 
-## 💬 Contato
+💬 Contato
 
 Para dúvidas, sugestões ou colaborações:
 

@@ -16,6 +16,11 @@ const MenuContainer = styled.div`
   align-items: center;
   position: absolute;
   top: 3.5em;
+  z-index: 5;
+
+  @media screen and (min-width: 1640px){
+    margin-right: 128px;
+  }
   `;
   
   const TelaDeTitulo = styled.div`

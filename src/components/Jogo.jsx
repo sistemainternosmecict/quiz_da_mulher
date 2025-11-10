@@ -5,7 +5,7 @@ import styled from 'styled-components';
 
 const JogoContainer = styled.div`
   position: absolute;
-  background-image: url(/public/fundo_jogo.png);
+  background-image: url(/fundo_jogo.png);
   background-size: cover;
   background-repeat:no-repeat;
   background-position:center;
