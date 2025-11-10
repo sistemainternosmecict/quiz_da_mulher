@@ -1,11 +1,12 @@
 import styled from "styled-components"
 import CountdownTimer from "./CoutdownTimer";
 
-const BG_COLOR = "#4b1a0c";
+const COR_BASE = "#68216D";
+const BTN_FONT_COLOR = "#DD8CEF";
 
 const TimerWrapper = styled.div`
-    background-color: #4b1a0c;
-    color: #ffb700;
+    background-color: ${COR_BASE};
+    color: ${BTN_FONT_COLOR};
     position: absolute;
     right: 0;
     top: 0;
@@ -29,6 +30,7 @@ const PerguntaEstilizada = styled.div`
     user-select: none;
     backdrop-filter: blur(6px);
     box-shadow: 0 4px 8px rgba(0,0,0,0.5);
+    max-width: 500px;
 `;
 
 const Texto = styled.h2`
@@ -52,8 +54,8 @@ const Resposta = styled.button`
     cursor: pointer;
     border-radius: 4px;
     box-shadow: 0 2px 8px rgba(0,0,0,0.5);
-    background-color: #ffb700;
-    color: #4b1a0c;
+    background-color: ${BTN_FONT_COLOR};
+    color: ${COR_BASE};
     font-size: 20px;
 
     &:hover{
@@ -70,7 +72,7 @@ export default function Pergunta({item, index, perguntaAtualIndex, responder, ms
                     <Resposta  key={opcaoIndex} onClick={() => responder(opcaoIndex, item)}>{opcao}</Resposta>
                 ))}
             </Respostas>
-            <p style={{width: "100%", textAlign: "center", fontSize:"18px", fontWeight:"bold", color: (msg == "VOCÊ ACERTOU!") ? "#78E627" : "red", background: BG_COLOR, padding: (msg ? 8 : 0)}}>{msg}</p>
+            <p style={{width: "100%", textAlign: "center", fontSize:"18px", fontWeight:"bold", color: (msg == "VOCÊ ACERTOU!") ? "#78E627" : "red", background: BTN_FONT_COLOR, padding: (msg ? 8 : 0)}}>{msg}</p>
             <TimerWrapper>
                 <CountdownTimer setTimerFinalizado={setTimerFinalizado} globalConfig={globalConfig} perguntaAtualIndex={perguntaAtualIndex}/>
             </TimerWrapper>

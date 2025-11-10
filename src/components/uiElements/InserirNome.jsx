@@ -1,7 +1,8 @@
 import styled from "styled-components";
 import CustomButton, { Button } from "./customButton";
 
-const COR_BASE = "#ffb601";
+const COR_BASE = "#68216D";
+const BTN_FONT_COLOR = "#DD8CEF";
 const COR_SEC = "#4b1a0c";
 
 const Container = styled.div`
@@ -14,8 +15,12 @@ const Container = styled.div`
 `;
 
 const Iniciar = styled(Button)`
-    border: solid 2px ${COR_BASE};
-    color: ${COR_BASE};
+    background-color: ${COR_BASE};
+    color: ${BTN_FONT_COLOR};
+    font-family: "La Belle Aurore", cursive;
+    font-size: 25px;
+    border-radius: 8px;
+    border: none;
 `;
 
 export default function InserirNome({ startGame, setDadosJogador, dadosJogador }){

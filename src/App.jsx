@@ -4,13 +4,12 @@ import InserirNome from './components/uiElements/InserirNome'
 import Jogo from './components/Jogo'
 import Fim from './components/Fim'
 import styled from 'styled-components'
-import mosquitoImage from '/agente.png'
 import Ranking from './components/uiElements/Ranking'
-import CertificadoComp from './components/uiElements/Certificado'
 
 
 const AppContainer = styled.div`
-  background-image: url(${mosquitoImage});
+  background: #854094;
+  background: linear-gradient(90deg, rgba(133, 64, 148, 1) 0%, rgba(41, 20, 46, 1) 100%);
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
@@ -20,7 +19,7 @@ const AppContainer = styled.div`
 `;
 
 function App() {
-  const [estado, setEstado] = useState(0)
+  const [estado, setEstado] = useState(2)
   const [globalConfig, setGlobalConfig] = useState({
     qnt_questoes: 5,
     tempo_questoes: 15
@@ -72,8 +71,7 @@ function App() {
       {estado == 1 ? <InserirNome startGame={startGame} setDadosJogador={setDadosJogador} dadosJogador={dadosJogador}/> : <></>}
       {estado == 2 ? <Jogo globalConfig={globalConfig} dadosJogador={dadosJogador} setDadosJogador={setDadosJogador} endGame={endGame}/> : <></>}
       {estado == 3 ? <Fim dadosJogador={dadosJogador} setRanking={setRanking} ranking={ranking} mostrarCertificado={mostrarCertificado}/> : <></>}
-      {estado == 4 ? <CertificadoComp dadosJogador={dadosJogador} globalConfig={globalConfig} mostrarRanking={mostrarRanking}/> : <></>}
-      {estado == 5 ? <Ranking ranking={ranking} reiniciar={reiniciar} dadosJogador={dadosJogador} globalConfig={globalConfig}/> : <></>}
+      {estado == 4 ? <Ranking ranking={ranking} reiniciar={reiniciar} dadosJogador={dadosJogador} globalConfig={globalConfig}/> : <></>}
     </AppContainer>
   )
 }

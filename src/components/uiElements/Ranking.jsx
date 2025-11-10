@@ -1,8 +1,10 @@
 import styled from "styled-components"
-import rankingImage from  "../../assets/ranking.png";
+import rankingImage from  "/ranking.svg";
 import CustomButton, { Button} from "./customButton";
 
-const COR_BASE = "#ffb601";
+// const COR_BASE = "#ffb601";
+const COR_BASE = "#68216D";
+const BTN_FONT_COLOR = "#DD8CEF";
 
 const Divisao = styled.div`
     display: flex;
@@ -37,7 +39,7 @@ const TituloRanking = styled(SecureImage)`
     position: absolute;
     top:0;
     filter: drop-shadow(0 2px 2px ${COR_BASE});
-    transform: translateY(-60%);
+    transform: translateY(-70%);
 `;
 
 const TabelaEstilizada = styled.table`
@@ -81,13 +83,15 @@ const TabelaEstilizada = styled.table`
 
 const Voltar = styled(Button)`
     margin: 8px 0;
-    border: solid 2px ${COR_BASE};
+    border: none;
     cursor: pointer;
     border-radius: 4px;
     box-shadow: 0 2px 8px rgba(0,0,0,0.5);
-    background-color: #4b1a0c;
-    color: ${COR_BASE};
+    background-color: ${COR_BASE};
+    color: ${BTN_FONT_COLOR};
     width: 100%;
+    font-family: "La Belle Aurore", cursive;
+    font-size: 25px;
 
     &:hover{
         background-color: #744234ff;

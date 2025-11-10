@@ -5,13 +5,17 @@ import styled from 'styled-components';
 
 const JogoContainer = styled.div`
   position: absolute;
+  background-image: url(/public/fundo_jogo.png);
+  background-size: cover;
+  background-repeat:no-repeat;
+  background-position:center;
   display: grid;
   place-content:center;
   left: 0;
   top: 0;
   width: 100%;
   height: 100%;
-  background-color: rgba(0, 0, 0, 0.8);
+  background-color: rgba(0, 0, 0, 0.6);
 `;
 
 function embaralharArray(array) {

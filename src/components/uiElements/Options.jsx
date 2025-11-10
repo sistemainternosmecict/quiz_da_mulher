@@ -1,19 +1,21 @@
 import styled from "styled-components";
 import { Button } from "./customButton";
 
-const COR_BASE = "#ffb601";
-const COR_SEC = "#4b1a0c";
+const COR_BASE = "#68216D";
+const BTN_FONT_COLOR = "#DD8CEF";
 
 const OpcaoContainer = styled.div`
     display: flex;
     flex-direction: column;
     gap: 10px;
-    background: ${COR_SEC};
+    background: ${BTN_FONT_COLOR};
     padding: 16px;
     border-radius: 8px;
-    color: white;
+    color: ${COR_BASE};
     box-shadow: 0 2px 4px black;
-    margin-bottom: 32px;
+    margin: 64px;
+    width: 100%;
+    max-width: 280px;
 
     ul{
         list-style: none;
@@ -38,30 +40,40 @@ const OpcaoContainer = styled.div`
 
         input {
             width: 60px;
-            padding: 5px;
+            padding: 8px;
             border: 1px solid #ccc;
             border-radius: 5px;
-            font-size: 14px;
+            font-size: 16px;
         }
     }
 
     button{
-        color: ${COR_BASE};
-        border: solid 2px ${COR_BASE};
+        font-family: "La Belle Aurore", cursive;
+        font-size: 25px;
+        background-color: ${COR_BASE};
+        color: ${BTN_FONT_COLOR};
+        border-radius: 8px;
+        width: 100%;
+        max-width: 286px;
+        cursor: pointer;
     }
 `;
 
 const MenuButton = styled(Button)`
-    color: ${COR_BASE};
-    border: solid 2px ${COR_BASE};
-    font-weight: bold;
+    font-family: "La Belle Aurore", cursive;
+    font-size: 25px;
+    background-color: ${COR_BASE};
+    color: ${BTN_FONT_COLOR};
+    border-radius: 8px;
     width: 100%;
+    max-width: 286px;
+    cursor: pointer;
 `;
 
 export default function Opcoes({globalConfig, setGlobalConfig, mostrarRanking, openOptions}) {
     return (
         <OpcaoContainer>
-            <h2 style={{width: "100%", textAlign: "center", color: "white"}}>Opções do jogo</h2>
+            <h2 style={{width: "100%", textAlign: "center", color: COR_BASE}}>Opções do jogo</h2>
             <ul>
                 <li>
                     <div className="opcao">

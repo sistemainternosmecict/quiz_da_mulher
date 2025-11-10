@@ -2,39 +2,44 @@ import styled from "styled-components";
 import CustomButton, { Button} from "./customButton";
 import Opcoes from "./Options";
 import { useState } from "react";
-import Titulo from "/titulo.png";
+import Titulo from "/logo_sm_branco.png";
 import BarraCreditosPrefeitura from './BarraCreditosPrefeitura';
 
-const COR_BASE = "#ffb601";
+const COR_BASE = "#68216D";
+const BTN_FONT_COLOR = "#DD8CEF";
 
 const MenuContainer = styled.div`
-  width: 300px;
-  // height: auto;
+  width: 100%;
   border-radius: 10px;
   display: flex;
-  flex-direction: column;
-  justify-content: center;
+  justify-content: flex-end;
   align-items: center;
-  padding: 20px;
   position: absolute;
-  bottom: 3.5em;
-`;
-
-const TelaDeTitulo = styled.div`
-  transform: translateY(-64px);
+  top: 3.5em;
+  `;
+  
+  const TelaDeTitulo = styled.div`
+  padding: 32px;
+  transform: translateY(-32px);
   filter: drop-shadow(0 2px 4px rgba(0,0,0,0.5));
 `;
 
 const BtnHolder = styled.div`
   display: flex;
-  justify-content: center;
+  flex-direction: column;
+  align-items: center;
   width: 100%;
-`;
+  `;
 
 const MenuButton = styled(Button)`
-    color: ${COR_BASE};
-    border: solid 2px ${COR_BASE};
-    font-weight: bold;
+    font-family: "La Belle Aurore", cursive;
+    font-size: 25px;
+    background-color: ${COR_BASE};
+    color: ${BTN_FONT_COLOR};
+    border-radius: 8px;
+    width: 100%;
+    max-width: 286px;
+    cursor: pointer;
 `;
 
 const SecureImage = styled.img`
@@ -57,7 +62,7 @@ export default function StartMenu({ startGame, globalConfig, setGlobalConfig, mo
         <MenuContainer>
             {!options ?
             <TelaDeTitulo>
-                <SecureImage src={Titulo} alt="Titulo do jogo" style={{width: "24em"}} />
+                <SecureImage src={Titulo} alt="Titulo do jogo" style={{width: "26em"}} />
                 <BtnHolder>
                     <MenuButton onClick={startGame}>Novo jogo</MenuButton>
                     <MenuButton onClick={openOptions}>Opções</MenuButton>
