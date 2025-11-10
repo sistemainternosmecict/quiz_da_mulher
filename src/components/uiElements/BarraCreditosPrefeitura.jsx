@@ -7,6 +7,10 @@ const Barra = styled.div`
     position: absolute;
     top:0;
     left:32px;
+
+    @media screen and (min-width: 1640px){
+        left: calc(32px + 128px);
+    }
 `;
 
 const LogoPrefeitura = styled(SecureImage)`
