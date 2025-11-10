@@ -15,7 +15,7 @@ const Barra = styled.div`
 
 const LogoPrefeitura = styled(SecureImage)`
     width: 500px;
-    `;
+`;
 
 export default function BarraCreditosPrefeitura(){
     return (

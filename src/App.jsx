@@ -22,7 +22,7 @@ function App() {
   const [estado, setEstado] = useState(0)
   const [globalConfig, setGlobalConfig] = useState({
     qnt_questoes: 5,
-    tempo_questoes: 15
+    tempo_questoes: 30
   })
   const [dadosJogador, setDadosJogador] = useState({
     nome: 'visitante',
