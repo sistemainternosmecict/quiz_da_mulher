@@ -54,8 +54,8 @@ const Resposta = styled.button`
     cursor: pointer;
     border-radius: 4px;
     box-shadow: 0 2px 8px rgba(0,0,0,0.5);
-    background-color: ${BTN_FONT_COLOR};
-    color: ${COR_BASE};
+    background-color:${($props => $props.bg)};
+    color: ${($props => $props.color)};
     font-size: 20px;
 
     &:hover{
@@ -69,7 +69,7 @@ export default function Pergunta({item, index, perguntaAtualIndex, responder, ms
             <Texto>{item.pergunta}</Texto>
             <Respostas>
                 {item.opcoes.map((opcao, opcaoIndex) => (
-                    <Resposta  key={opcaoIndex} onClick={() => responder(opcaoIndex, item)}>{opcao}</Resposta>
+                    <Resposta color={item.respondendo ? "white" : COR_BASE} bg={!item.respondendo ? "white" : (item.corretas[0] == opcaoIndex ? "#9dec6d" : "#ff8d8d") }  key={opcaoIndex} onClick={() => responder(opcaoIndex, item)}>{opcao}</Resposta>
                 ))}
             </Respostas>
             <p style={{width: "100%", textAlign: "center", fontSize:"18px", fontWeight:"bold", color: (msg == "VOCÊ ACERTOU!") ? "#78E627" : "red", background: BTN_FONT_COLOR, padding: (msg ? 8 : 0)}}>{msg}</p>
