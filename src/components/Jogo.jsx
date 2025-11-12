@@ -37,6 +37,7 @@ export default function Jogo({ globalConfig, dadosJogador, setDadosJogador, endG
 
     function responder(idx, pergunta){
         setRespondida(true)
+        pergunta.respondendo = true;
         if(perguntaAtualIndex <= globalConfig.qnt_questoes){
             if(idx == pergunta.corretas[0]){
                 setMsg("VOCÊ ACERTOU!")
@@ -54,6 +55,8 @@ export default function Jogo({ globalConfig, dadosJogador, setDadosJogador, endG
             setTimeout(() => {
                 setPerguntaAtualIndex((prev) => prev + 1)
                 setRespondida(false)
+        pergunta.respondendo = false;
+
             }, 2000)
         }
         
